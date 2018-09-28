@@ -23,6 +23,7 @@ public class Crab extends Actor
         }
         if(isTouching(worm.class)){
             removeTouching(worm.class);
+            Greenfoot.playSound("eating.wav");
         }
     }    
 }
