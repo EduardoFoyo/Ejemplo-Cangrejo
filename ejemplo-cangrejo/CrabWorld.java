@@ -17,7 +17,10 @@ public class CrabWorld extends greenfoot.World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        Tiempo tiempo = new Tiempo();
+        this.addObject(tiempo,60,20);
         prepare();
+       
     }
 
     /**
@@ -60,5 +63,7 @@ public class CrabWorld extends greenfoot.World
         addObject(crab,240,130);
         Lobster lobster = new Lobster();
         addObject(lobster,402,295);
+        Tiempo tiempo = new Tiempo();
+        addObject(tiempo,43,23);
     }
 }
