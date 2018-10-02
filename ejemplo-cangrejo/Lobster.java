@@ -20,7 +20,9 @@ public class Lobster extends Actor
             i=0;
         }
         if(isTouching(Crab.class)){
-            removeTouching(Crab.class);
+            CrabWorld mundo = (CrabWorld)this.getWorld();
+            mundo.vidas();
+            //removeTouching(Crab.class);
         }
         move(5);
         i++;

@@ -22,8 +22,10 @@ public class Crab extends Actor
             turn(-3);
         }
         if(isTouching(worm.class)){
-            removeTouching(worm.class);
-            Greenfoot.playSound("eating.wav");
+            
+           removeTouching(worm.class);
+           getWorldOfType(CrabWorld.class).accedeLangosta().setLocation();
+            //Greenfoot.playSound("eating.wav");
         }
     }    
 }
